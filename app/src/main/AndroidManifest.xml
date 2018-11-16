@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.septiprima.tugasakhir">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="Goolek"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/CustomTheme">
+
+        <!-- //google api key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB1KctygafYDgcIGoCj5DuqX9lQxkPOto4" />
+
+        <activity android:name=".activity.MainActivity"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MapActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.StoreRegistryActivity" />
+        <activity android:name=".activity.StoreActivity" />
+        <activity android:name=".activity.StoreDetailActivity" />
+        <activity android:name=".activity.StoreMenuActivity" />
+        <activity android:name=".activity.NearMeActivity" />
+        <activity android:name=".activity.FindLocActivity" />
+        <activity android:name=".activity.Main2Activity" />
+        <activity android:name=".activity.ItemsActivity" />
+        <activity android:name=".activity.UpdateItemActivity" />
+        <activity android:name=".activity.UpdateProfilActivity" />
+        <activity android:name=".activity.EditProfil2" />
+        <activity android:name=".activity.FavoriteActivity"></activity>
+    </application>
+
+</manifest>

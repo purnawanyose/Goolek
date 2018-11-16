@@ -1,0 +1,8 @@
+<resources>
+	<dimen name="gap_xs">12dp</dimen>
+	<dimen name="gap_s">24dp</dimen>
+	<dimen name="gap_m">48dp</dimen>
+	<dimen name="gap_l">96dp</dimen>
+	<dimen name="gap_xl">126dp</dimen>
+	<dimen name="gap_xxl">180dp</dimen>
+</resources>

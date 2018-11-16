@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "370202154426",
+    "firebase_url": "https://appproject-5c4b3.firebaseio.com",
+    "project_id": "appproject-5c4b3",
+    "storage_bucket": "appproject-5c4b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370202154426:android:b64ce1ddbc1ac5ca",
+        "android_client_info": {
+          "package_name": "com.septiprima.tugasakhir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370202154426-bltpdlaon57p7set3gki8ddfssf1ko7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfjuK531PVwlgDRFTqCV3Q9_h8uEn1_8k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/store_item">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="118dp"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/itemimg"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/batik"
+                android:scaleType="fitXY"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Batik corak madura kain katun"
+                android:id="@+id/item_name"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp. 500.000,-"
+                android:id="@+id/item_price"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/gap_xs"
+                android:textSize="18dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/form_divider"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginLeft="@dimen/gap_xs"
+        android:layout_marginRight="@dimen/gap_xs"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>

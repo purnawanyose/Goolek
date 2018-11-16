@@ -1,0 +1,8 @@
+<resources>
+	<dimen name="gap_xs">7.2dp</dimen>
+	<dimen name="gap_s">14.4dp</dimen>
+	<dimen name="gap_m">28.8dp</dimen>
+	<dimen name="gap_l">57.6dp</dimen>
+	<dimen name="gap_xl">75.6dp</dimen>
+	<dimen name="gap_xxl">108dp</dimen>
+</resources>

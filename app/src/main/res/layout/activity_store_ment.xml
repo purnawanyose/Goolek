@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.septiprima.tugasakhir.activity.StoreMenuActivity">
+
+    <LinearLayout
+        android:id="@+id/profile"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBgOpacity60">
+
+            <RelativeLayout
+                android:id="@+id/imageicon1"
+                android:layout_width="100dp"
+                android:layout_height="118dp"
+                android:background="@color/colorPrimary"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/curriculum"
+                    android:scaleType="fitXY"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/updateprofile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@android:color/background_dark"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_toRightOf="@+id/imageicon1"
+                android:textSize="@dimen/gap_s"
+                android:textStyle="bold"
+                android:text="Manage Profile"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/manage_store"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBgOpacity60">
+
+                <RelativeLayout
+                    android:id="@+id/imageicon2"
+                    android:layout_width="100dp"
+                    android:layout_height="118dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/add"
+                        android:scaleType="fitXY"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/additems"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/background_dark"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_toRightOf="@+id/imageicon2"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/gap_s"
+                    android:text="Add Items"/>
+
+            </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/update_item"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBgOpacity60">
+
+            <RelativeLayout
+                android:id="@+id/imageicon3"
+                android:layout_width="100dp"
+                android:layout_height="118dp"
+                android:background="@color/colorPrimary"
+                android:padding="20dp">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/refresh"
+                    android:scaleType="fitXY"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/updateitem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@android:color/background_dark"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_toRightOf="@+id/imageicon3"
+                android:textStyle="bold"
+                android:textSize="@dimen/gap_s"
+                android:text="Update Items"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

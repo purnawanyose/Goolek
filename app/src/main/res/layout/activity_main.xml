@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    tools:context="com.septiprima.tugasakhir.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:id="@+id/gambar1"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_action_action_search"
+                android:background="@android:color/transparent"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/etxtPengambilan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_toRightOf="@+id/gambar1">
+                <AutoCompleteTextView
+                    android:id="@+id/ambil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="@android:color/white"
+                    android:focusableInTouchMode="true"
+                    android:maxLines="1"/>
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/openmap"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:background="@drawable/nearme">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:tint="@color/colorBgOpacity60"
+                    android:src="@drawable/map"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Map"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/gap_m"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/form_divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/gap_xs"
+                android:layout_marginRight="@dimen/gap_xs"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/nearme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:tint="@color/colorBgOpacity60"
+                        android:src="@drawable/nearme"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Near Me"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/gap_m"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="2dp"
+                    android:layout_height="fill_parent">
+
+                    <View
+                        android:layout_width="10dp"
+                        android:layout_height="fill_parent"
+                        android:background="@android:color/black" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:tint="@color/colorBgOpacity60"
+                        android:src="@drawable/shop"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Favorite"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/gap_m"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:id="@+id/form_divider2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="@dimen/gap_xs"
+                android:layout_marginRight="@dimen/gap_xs"
+                android:background="@color/colorPrimary" />
+
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:padding="@dimen/gap_xs"
+                android:textSize="20sp"
+                android:fontFamily="monospace"
+                android:textColor="@color/colorBg"
+                android:text="Store Categories"/>
+
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/main_recyler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</RelativeLayout>
